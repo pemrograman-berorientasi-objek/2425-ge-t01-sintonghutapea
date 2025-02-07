@@ -1,11 +1,24 @@
 package fintech.model;
 
 /**
- * @author NIM Nama
- * @author NIM Nama
+ * @author 12S23029 Sintong Hutapea
+ * @author 12S23038 Alya Triswani
  */
+
 public class Account {
 
-    // class definition
+    private String owner;
+    private String accountName;
+    private double balance;
 
+    public Account(String owner, String accountName) {
+        this.owner = owner;
+        this.accountName = accountName;
+        this.balance = 0.0;
+    }
+
+    @Override
+    public String toString() {
+        return accountName + "|" + owner + "|" + balance;
+    }
 }
