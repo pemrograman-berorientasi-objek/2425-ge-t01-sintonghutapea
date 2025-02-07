@@ -19,7 +19,7 @@ public class Driver2 {
         if (command.equals("create-account")) {
             String owner = scanner.nextLine().trim();
             String accountName = scanner.nextLine().trim();
-            account = new Account(owner, accountName);  
+            account = new Account(accountName, owner);  
         }
 
         if (account != null) {
@@ -30,8 +30,8 @@ public class Driver2 {
                 String postedAt = scanner.nextLine().trim();
                 String note = scanner.nextLine().trim();
 
-                Transaction transaction = new Transaction(accountName, amount, postedAt, note);
-                System.out.println(account.toString());  
+                Transaction transaction = new Transaction(accountName, amount, postedAt, note);  
+                System.out.println(account.toString());
                 account.addBalance(amount);
                 System.out.println(transaction.toString());
             }

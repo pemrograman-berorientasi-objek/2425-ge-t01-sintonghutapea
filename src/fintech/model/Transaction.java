@@ -17,6 +17,9 @@ package fintech.model;
      private double amount;
      private Date postedAt;
      private String note;
+     private String owner;
+     private double balance;
+
  
      public Transaction(String accountName, double amount, String postedAt, String note) {
          this.id = ++transactionCount;
@@ -59,4 +62,9 @@ package fintech.model;
                  new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(postedAt) + "|" +
                  (note != null ? note : "") + "|" + amount;
      }
+
+     public String toString2() {
+        return  accountName + "|" + owner + "|" + balance;
+    }
+
  }
