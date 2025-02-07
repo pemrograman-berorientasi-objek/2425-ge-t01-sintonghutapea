@@ -17,6 +17,10 @@ public class Account {
         this.balance = 0.0;
     }
 
+    public void addBalance(double amount) {
+        this.balance += amount;
+    }
+    
     @Override
     public String toString() {
         return  owner + "|" + accountName + "|" + balance;

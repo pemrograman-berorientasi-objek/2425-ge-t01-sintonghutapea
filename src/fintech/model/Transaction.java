@@ -55,9 +55,8 @@ package fintech.model;
  
      @Override
      public String toString() {
-        return id + "|" + accountName + "|" + amount + "|" +
-        new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(postedAt) + "|" +
-        (note != null ? note : ""); 
+         return id + "|" + accountName + "|" + amount + "|" +
+                 new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(postedAt) + "|" +
+                 (note != null ? note : "") + "|" + amount;
      }
  }
- 
