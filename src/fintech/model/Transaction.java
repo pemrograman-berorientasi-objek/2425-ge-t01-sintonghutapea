@@ -23,7 +23,6 @@ package fintech.model;
          this.accountName = accountName;
          this.amount = amount;
  
-         // Parse postedAt string to Date
          try {
              SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
              this.postedAt = dateFormat.parse(postedAt);
@@ -56,9 +55,9 @@ package fintech.model;
  
      @Override
      public String toString() {
-         return id + "|" + accountName + "|" + amount + "|" +
-                 new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(postedAt) + "|" +
-                 (note != null ? note : "") + "|" + amount;
+        return id + "|" + accountName + "|" + amount + "|" +
+        new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(postedAt) + "|" +
+        (note != null ? note : ""); 
      }
  }
  

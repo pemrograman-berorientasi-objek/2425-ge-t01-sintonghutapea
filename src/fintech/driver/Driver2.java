@@ -35,7 +35,6 @@ public class Driver2 {
                 System.out.println(transaction.toString());
             }
         }
-
         scanner.close();
     }
 }
