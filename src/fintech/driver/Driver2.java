@@ -21,7 +21,6 @@ public class Driver2 {
                 String owner = scanner.nextLine().trim();
                 String accountName = scanner.nextLine().trim();
                 Account account = new Account(owner, accountName);
-                System.out.println(account.toString());
                 
             } else if (command.equals("create-transaction")) {
                 String accountName = scanner.nextLine().trim();
