@@ -20,6 +20,7 @@ public class Driver2 {
             String owner = scanner.nextLine().trim();
             String accountName = scanner.nextLine().trim();
             account = new Account(owner, accountName);  
+            System.out.println(account.toString());  
         }
 
         if (account != null) {
@@ -31,7 +32,6 @@ public class Driver2 {
                 String note = scanner.nextLine().trim();
 
                 Transaction transaction = new Transaction(accountName, amount, postedAt, note);
-                System.out.println(account.toString());
                 account.addBalance(amount);
                 System.out.println(transaction.toString());
             }
